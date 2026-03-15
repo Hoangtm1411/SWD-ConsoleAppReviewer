@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\entertainment reviews\\entertainment reviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\Program.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
+              "RelativeToolTip": "Entertainment Reviews\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T10:42:40.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

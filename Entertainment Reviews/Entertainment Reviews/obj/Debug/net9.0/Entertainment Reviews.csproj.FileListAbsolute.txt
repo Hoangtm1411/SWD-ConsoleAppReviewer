@@ -1,0 +1,14 @@
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\bin\Debug\net9.0\Entertainment Reviews.exe
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\bin\Debug\net9.0\Entertainment Reviews.deps.json
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\bin\Debug\net9.0\Entertainment Reviews.runtimeconfig.json
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\bin\Debug\net9.0\Entertainment Reviews.dll
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\bin\Debug\net9.0\Entertainment Reviews.pdb
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.GeneratedMSBuildEditorConfig.editorconfig
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.AssemblyInfoInputs.cache
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.AssemblyInfo.cs
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.csproj.CoreCompileInputs.cache
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.dll
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\refint\Entertainment Reviews.dll
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.pdb
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.genruntimeconfig.cache
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\ref\Entertainment Reviews.dll
