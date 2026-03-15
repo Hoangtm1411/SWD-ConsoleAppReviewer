@@ -12,3 +12,4 @@ D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews
 D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.pdb
 D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.genruntimeconfig.cache
 D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\ref\Entertainment Reviews.dll
+D:\SWD302\SWD-Entertainment Reviews\SWD-ConsoleAppReviewer\Entertainment Reviews\Entertainment Reviews\obj\Debug\net9.0\Entertainment Reviews.sourcelink.json

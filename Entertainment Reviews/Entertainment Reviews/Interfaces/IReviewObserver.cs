@@ -4,5 +4,5 @@ namespace EntertainmentReviews.Interfaces;
 
 public interface IReviewObserver
 {
-    void Update(Review review);
+	void Update(Review review);
 }

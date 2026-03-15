@@ -1,36 +1,154 @@
 using EntertainmentReviews.Models;
 using EntertainmentReviews.System;
 using EntertainmentReviews.Subscribers;
+using EntertainmentReviews.Menus;
 
-Console.WriteLine("=== Entertainment Reviews - Observer Pattern Demo ===\n");
+var users = DataManager.LoadUsers();
+if (!users.Any())
+{
+	users = new List<UserSubscriber>
+	{
+		new UserSubscriber("Admin", true), // Admin account
+		new UserSubscriber("Alice (Gamer)", false, new List<Category> { Category.Game }),
+		new UserSubscriber("Bob (Movie Fan)", false, new List<Category> { Category.Movie }),
+		new UserSubscriber("Charlie (All)", false, new List<Category> { Category.Game, Category.Movie, Category.Music })
+	};
+	DataManager.SaveUsers(users);
+}
 
-// 1. Create the Subject (Publisher)
+var items = DataManager.LoadItems();
+var reviews = DataManager.LoadReviews();
+
+if (!items.Any())
+{
+	items = new List<EntertainmentItem>
+	{
+		new EntertainmentItem("The Witcher 3", Category.Game),
+		new EntertainmentItem("Inception", Category.Movie),
+		new EntertainmentItem("Old Town Road", Category.Music)
+	};
+	DataManager.SaveItems(items);
+}
+
 var reviewSystem = new ReviewSystem();
+reviewSystem.LoadState(items, reviews);
 
-// 2. Create Observers (Subscribers)
-var gamerAlice = new UserSubscriber("Alice (Gamer)", new List<Category> { Category.Game });
-var cinephileBob = new UserSubscriber("Bob (Movie Fan)", new List<Category> { Category.Movie });
-var allRounderCharlie = new UserSubscriber("Charlie (All)", new List<Category> { Category.Game, Category.Movie, Category.Music });
+foreach (var user in users)
+{
+	reviewSystem.Attach(user);
+}
 
-// 3. Attach Observers
-reviewSystem.Attach(gamerAlice);
-reviewSystem.Attach(cinephileBob);
-reviewSystem.Attach(allRounderCharlie);
+ConsoleHelper.PrintSystem($"[System] Loaded {users.Count} users, {items.Count} items, and {reviews.Count} reviews.");
 
-// 4. Add Reviews and trigger notifications
-var review1 = new Review("The Witcher 3", Category.Game, 10, "A masterpiece of storytelling and RPG elements.");
-reviewSystem.AddReview(review1);
+UserSubscriber? currentAccount = null;
 
-var review2 = new Review("Inception", Category.Movie, 9, "Mind-bending plot and stunning visuals.");
-reviewSystem.AddReview(review2);
+while (true)
+{
+	if (currentAccount == null)
+	{
+		Console.WriteLine("\n=== Entertainment Reviews - Welcome ===");
+		Console.WriteLine("1. Login");
+		Console.WriteLine("2. Register");
+		Console.WriteLine("3. Exit");
+		Console.Write("Select an option (1-3): ");
 
-var review3 = new Review("Daft Punk - Discovery", Category.Music, 10, "A legendary electronic music album.");
-reviewSystem.AddReview(review3);
+		var choice = Console.ReadLine();
+		switch (choice)
+		{
+			case "1":
+				currentAccount = MenuHelper.LoginMenu(users);
+				break;
+			case "2":
+				currentAccount = MenuHelper.RegisterMenu(users);
+				break;
+			case "3":
+				Console.WriteLine("Exiting... Goodbye!");
+				return;
+			default:
+				ConsoleHelper.PrintError("Invalid option. Please try again.");
+				break;
+		}
+	}
+	else
+	{
+		MenuHelper.ShowUnreviewedNotifications(reviewSystem, currentAccount);
 
-Console.WriteLine("\n[System] Bob is no longer interested in updates.");
-reviewSystem.Detach(cinephileBob);
+		Console.WriteLine($"\n=== Entertainment Reviews - Main Menu (Logged in as: {currentAccount.UserName}) ===");
+		Console.WriteLine("1. Add/Edit a Review");
+		Console.WriteLine("2. View Overall Reviews");
+		Console.WriteLine("3. Logout");
+		
+		string subStatus = currentAccount.IsSubscribed ? "ON" : "OFF";
+		Console.WriteLine($"4. Toggle Notifications (Currently: {subStatus})");
 
-var review4 = new Review("The Matrix", Category.Movie, 8, "Classic sci-fi action.");
-reviewSystem.AddReview(review4);
+		int exitOptionNumber = 5;
+		if (currentAccount.IsAdmin)
+		{
+			Console.WriteLine("5. Manage Items (Admin)");
+			Console.WriteLine("6. Exit");
+			exitOptionNumber = 6;
+		}
+		else
+		{
+			Console.WriteLine("5. Exit");
+		}
+		
+		Console.Write($"Select an option (1-{exitOptionNumber}): ");
 
-Console.WriteLine("\n=== Demo Finished ===");
+		var choice = Console.ReadLine();
+
+		if (currentAccount.IsAdmin)
+		{
+			switch (choice)
+			{
+				case "1":
+					MenuHelper.AddReviewMenu(reviewSystem, currentAccount);
+					break;
+				case "2":
+					MenuHelper.ViewOverallReviewsMenu(reviewSystem);
+					break;
+				case "3":
+					Console.WriteLine($"Logging out {currentAccount.UserName}...");
+					currentAccount = null;
+					break;
+				case "4":
+					MenuHelper.ToggleSubscriptionMenu(currentAccount, users);
+					break;
+				case "5":
+					MenuHelper.AddEntertainmentItemMenu(reviewSystem);
+					break;
+				case "6":
+					Console.WriteLine("Exiting... Goodbye!");
+					return;
+				default:
+					ConsoleHelper.PrintError("Invalid option. Please try again.");
+					break;
+			}
+		}
+		else
+		{
+			switch (choice)
+			{
+				case "1":
+					MenuHelper.AddReviewMenu(reviewSystem, currentAccount);
+					break;
+				case "2":
+					MenuHelper.ViewOverallReviewsMenu(reviewSystem);
+					break;
+				case "3":
+					Console.WriteLine($"Logging out {currentAccount.UserName}...");
+					currentAccount = null;
+					break;
+				case "4":
+					MenuHelper.ToggleSubscriptionMenu(currentAccount, users);
+					break;
+				case "5":
+					Console.WriteLine("Exiting... Goodbye!");
+					return;
+				default:
+					ConsoleHelper.PrintError("Invalid option. Please try again.");
+					break;
+			}
+		}
+	}
+}

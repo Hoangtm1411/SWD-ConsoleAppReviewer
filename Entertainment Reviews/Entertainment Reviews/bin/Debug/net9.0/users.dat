@@ -1,0 +1,48 @@
+[
+  {
+    "UserName": "Admin",
+    "IsAdmin": true,
+    "IsSubscribed": true,
+    "InterestedCategories": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "UserName": "Alice (Gamer)",
+    "IsAdmin": false,
+    "IsSubscribed": true,
+    "InterestedCategories": [
+      0
+    ]
+  },
+  {
+    "UserName": "Bob (Movie Fan)",
+    "IsAdmin": false,
+    "IsSubscribed": true,
+    "InterestedCategories": [
+      1
+    ]
+  },
+  {
+    "UserName": "Charlie (All)",
+    "IsAdmin": false,
+    "IsSubscribed": true,
+    "InterestedCategories": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "UserName": "Hoangtm427",
+    "IsAdmin": false,
+    "IsSubscribed": true,
+    "InterestedCategories": [
+      0,
+      1,
+      2
+    ]
+  }
+]

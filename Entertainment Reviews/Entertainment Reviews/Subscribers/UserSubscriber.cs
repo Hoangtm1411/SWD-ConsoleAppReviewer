@@ -1,24 +1,35 @@
 using EntertainmentReviews.Interfaces;
 using EntertainmentReviews.Models;
+using EntertainmentReviews.System;
 
 namespace EntertainmentReviews.Subscribers;
 
 public class UserSubscriber : IReviewObserver
 {
-    public string UserName { get; private set; }
-    private readonly List<Category> _interestedCategories;
+	public string UserName { get; set; }
+	public bool IsAdmin { get; set; }
+	public bool IsSubscribed { get; set; } = true;
+	public List<Category> InterestedCategories { get; set; }
 
-    public UserSubscriber(string userName, List<Category>? interestedCategories = null)
-    {
-        UserName = userName;
-        _interestedCategories = interestedCategories ?? Enum.GetValues<Category>().ToList();
-    }
+	// Parameterless constructor needed for JSON deserialization
+	public UserSubscriber() { }
 
-    public void Update(Review review)
-    {
-        if (_interestedCategories.Contains(review.Category))
-        {
-            Console.WriteLine($"--> [{UserName}] received a new {review.Category} review: {review}");
-        }
-    }
+	public UserSubscriber(string userName, bool isAdmin = false, List<Category>? interestedCategories = null)
+	{
+		UserName = userName;
+		IsAdmin = isAdmin;
+		InterestedCategories = interestedCategories ?? Enum.GetValues<Category>().ToList();
+	}
+
+	public void Update(Review review)
+	{
+		if (!IsSubscribed) return;
+
+		if (InterestedCategories.Contains(review.Category))
+		{
+			Console.Write($"--> [{UserName}] received a new ");
+			ConsoleHelper.WriteCategoryColoredText($"{review.Category}", review.Category);
+			Console.WriteLine($" review: {review}");
+		}
+	}
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "Title": "Hollow Knight",
+    "Category": 0,
+    "Rating": 8,
+    "Content": "hay vl",
+    "AuthorName": "Admin"
+  },
+  {
+    "Title": "Sekiro Shadow Die Twice",
+    "Category": 0,
+    "Rating": 7,
+    "Content": "cx \u0111c",
+    "AuthorName": "Admin"
+  },
+  {
+    "Title": "Vinland Saga",
+    "Category": 1,
+    "Rating": 9,
+    "Content": "ko xem thi phi",
+    "AuthorName": "Admin"
+  },
+  {
+    "Title": "The Witcher 3",
+    "Category": 0,
+    "Rating": 5,
+    "Content": "not for me",
+    "AuthorName": "Admin"
+  },
+  {
+    "Title": "The Stanley Parable",
+    "Category": 0,
+    "Rating": 10,
+    "Content": "breaking the fourth war is PEAK, may con ga biet gi",
+    "AuthorName": "Hoangtm427"
+  }
+]

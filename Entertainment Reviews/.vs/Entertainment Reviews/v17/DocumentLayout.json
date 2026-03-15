@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\",
+  "WorkspaceRootPath": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\entertainment reviews\\entertainment reviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\menus\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\menus\\menuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\models\\entertainmentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\models\\entertainmentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\subscribers\\usersubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\subscribers\\usersubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\system\\reviewsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\system\\reviewsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\system\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\system\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\system\\consolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\system\\consolehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|d:\\swd302\\swd-entertainment reviews\\swd-consoleappreviewer\\entertainment reviews\\entertainment reviews\\interfaces\\ireviewobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A90FF2F-B561-4E50-BA8F-76D49B767A40}|Entertainment Reviews\\Entertainment Reviews.csproj|solutionrelative:entertainment reviews\\interfaces\\ireviewobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuHelper.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Menus\\MenuHelper.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\Menus\\MenuHelper.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Menus\\MenuHelper.cs",
+              "RelativeToolTip": "Entertainment Reviews\\Menus\\MenuHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T11:25:44.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EntertainmentItem.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Models\\EntertainmentItem.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\Models\\EntertainmentItem.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Models\\EntertainmentItem.cs",
+              "RelativeToolTip": "Entertainment Reviews\\Models\\EntertainmentItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:16:53.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserSubscriber.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Subscribers\\UserSubscriber.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\Subscribers\\UserSubscriber.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Subscribers\\UserSubscriber.cs",
+              "RelativeToolTip": "Entertainment Reviews\\Subscribers\\UserSubscriber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:16:44.944Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
               "RelativeDocumentMoniker": "Entertainment Reviews\\Program.cs",
-              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Program.cs",
               "RelativeToolTip": "Entertainment Reviews\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T10:42:40.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewSystem.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\ReviewSystem.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\System\\ReviewSystem.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\ReviewSystem.cs",
+              "RelativeToolTip": "Entertainment Reviews\\System\\ReviewSystem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T11:26:18.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\DataManager.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\System\\DataManager.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\DataManager.cs",
+              "RelativeToolTip": "Entertainment Reviews\\System\\DataManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:39:58.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsoleHelper.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\ConsoleHelper.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\System\\ConsoleHelper.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\System\\ConsoleHelper.cs",
+              "RelativeToolTip": "Entertainment Reviews\\System\\ConsoleHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:39:52.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IReviewObserver.cs",
+              "DocumentMoniker": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Interfaces\\IReviewObserver.cs",
+              "RelativeDocumentMoniker": "Entertainment Reviews\\Interfaces\\IReviewObserver.cs",
+              "ToolTip": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Interfaces\\IReviewObserver.cs",
+              "RelativeToolTip": "Entertainment Reviews\\Interfaces\\IReviewObserver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:17:18.342Z",
               "EditorCaption": ""
             }
           ]

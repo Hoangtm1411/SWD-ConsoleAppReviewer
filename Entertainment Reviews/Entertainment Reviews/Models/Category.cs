@@ -2,7 +2,7 @@ namespace EntertainmentReviews.Models;
 
 public enum Category
 {
-    Game,
-    Movie,
-    Music
+	Game,
+	Movie,
+	Music
 }
