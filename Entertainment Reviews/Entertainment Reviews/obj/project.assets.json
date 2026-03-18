@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\thaim\\.nuget\\packages\\": {},
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews.csproj",
+      "projectUniqueName": "D:\\University stuffs\\Coding\\SWD\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews.csproj",
       "projectName": "Entertainment Reviews",
-      "projectPath": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews.csproj",
-      "packagesPath": "C:\\Users\\thaim\\.nuget\\packages\\",
-      "outputPath": "D:\\SWD302\\SWD-Entertainment Reviews\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\obj\\",
+      "projectPath": "D:\\University stuffs\\Coding\\SWD\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\Entertainment Reviews.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\University stuffs\\Coding\\SWD\\SWD-ConsoleAppReviewer\\Entertainment Reviews\\Entertainment Reviews\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\thaim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

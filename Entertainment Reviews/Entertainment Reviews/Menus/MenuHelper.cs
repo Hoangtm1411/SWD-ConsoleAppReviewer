@@ -17,9 +17,8 @@ public static class MenuHelper
 		Console.Write("Select your account: ");
 		
 		if (int.TryParse(Console.ReadLine(), out int userChoice) && userChoice > 0 && userChoice <= users.Count)
-		{
 			return users[userChoice - 1];
-		}
+		
 		
 		ConsoleHelper.PrintError("Invalid choice or cancelled.");
 		return null;

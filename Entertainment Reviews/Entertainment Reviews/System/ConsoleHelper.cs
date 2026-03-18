@@ -2,31 +2,23 @@ using EntertainmentReviews.Models;
 
 namespace EntertainmentReviews.System;
 
-public static class ConsoleHelper
-{
-	public static void PrintSystem(string message)
-	{
+public static class ConsoleHelper{
+	public static void PrintSystem(string message){
 		Console.ForegroundColor = ConsoleColor.DarkGray;
 		Console.WriteLine(message);
 		Console.ResetColor();
 	}
-
-	public static void PrintNotification(string message)
-	{
+	public static void PrintNotification(string message){
 		Console.ForegroundColor = ConsoleColor.Yellow;
 		Console.WriteLine(message);
 		Console.ResetColor();
 	}
-
-	public static void PrintError(string message)
-	{
+	public static void PrintError(string message){
 		Console.ForegroundColor = ConsoleColor.Red;
 		Console.WriteLine(message);
 		Console.ResetColor();
 	}
-
-	public static void WriteCategoryColoredMessage(string message, Category category)
-	{
+	public static void WriteCategoryColoredMessage(string message, Category category){
 		ConsoleColor tempColor = Console.ForegroundColor;
 		Console.ForegroundColor = category switch
 		{
@@ -38,9 +30,7 @@ public static class ConsoleHelper
 		Console.WriteLine(message);
 		Console.ForegroundColor = tempColor;
 	}
-
-	public static void WriteCategoryColoredText(string message, Category category)
-	{
+	public static void WriteCategoryColoredText(string message, Category category){
 		ConsoleColor tempColor = Console.ForegroundColor;
 		Console.ForegroundColor = category switch
 		{

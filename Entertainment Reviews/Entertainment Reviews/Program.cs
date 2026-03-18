@@ -21,8 +21,7 @@ var reviews = DataManager.LoadReviews();
 
 if (!items.Any())
 {
-	items = new List<EntertainmentItem>
-	{
+	items = new List<EntertainmentItem>{
 		new EntertainmentItem("The Witcher 3", Category.Game),
 		new EntertainmentItem("Inception", Category.Movie),
 		new EntertainmentItem("Old Town Road", Category.Music)
@@ -34,18 +33,12 @@ var reviewSystem = new ReviewSystem();
 reviewSystem.LoadState(items, reviews);
 
 foreach (var user in users)
-{
 	reviewSystem.Attach(user);
-}
-
 ConsoleHelper.PrintSystem($"[System] Loaded {users.Count} users, {items.Count} items, and {reviews.Count} reviews.");
-
 UserSubscriber? currentAccount = null;
 
-while (true)
-{
-	if (currentAccount == null)
-	{
+while (true){
+	if (currentAccount == null){
 		Console.WriteLine("\n=== Entertainment Reviews - Welcome ===");
 		Console.WriteLine("1. Login");
 		Console.WriteLine("2. Register");
@@ -68,12 +61,14 @@ while (true)
 				ConsoleHelper.PrintError("Invalid option. Please try again.");
 				break;
 		}
+		Console.Clear();
 	}
 	else
 	{
 		MenuHelper.ShowUnreviewedNotifications(reviewSystem, currentAccount);
 
-		Console.WriteLine($"\n=== Entertainment Reviews - Main Menu (Logged in as: {currentAccount.UserName}) ===");
+		Console.WriteLine($"\n=== Entertainment Reviews - Main Menu ===");
+		Console.WriteLine($"[Logged in as: {currentAccount.UserName}]");
 		Console.WriteLine("1. Add/Edit a Review");
 		Console.WriteLine("2. View Overall Reviews");
 		Console.WriteLine("3. Logout");
@@ -84,23 +79,34 @@ while (true)
 		int exitOptionNumber = 5;
 		if (currentAccount.IsAdmin)
 		{
-			Console.WriteLine("5. Manage Items (Admin)");
+			Console.WriteLine("5. Add Items (Admin)");
 			Console.WriteLine("6. Exit");
 			exitOptionNumber = 6;
 		}
-		else
-		{
-			Console.WriteLine("5. Exit");
-		}
+		else Console.WriteLine("5. Exit");
 		
 		Console.Write($"Select an option (1-{exitOptionNumber}): ");
 
 		var choice = Console.ReadLine();
 
+		// switch (choice)
+		// {
+		// 	case "1":
+		// 		MenuHelper.AddReviewMenu(reviewSystem, currentAccount);
+		// 		break;
+		// 	case "2":
+		// 		MenuHelper.ViewOverallReviewsMenu(reviewSystem);
+		// 		break;
+		// 	case "3":
+		// 		Console.WriteLine($"Logging out {currentAccount.UserName}...");
+		// 		currentAccount = null;
+		// 		break;
+		// 	case "4":
+		// 		MenuHelper.ToggleSubscriptionMenu(currentAccount, users);
+		// 		break;
+		// }
 		if (currentAccount.IsAdmin)
-		{
-			switch (choice)
-			{
+			switch (choice){
 				case "1":
 					MenuHelper.AddReviewMenu(reviewSystem, currentAccount);
 					break;
@@ -124,11 +130,8 @@ while (true)
 					ConsoleHelper.PrintError("Invalid option. Please try again.");
 					break;
 			}
-		}
-		else
-		{
-			switch (choice)
-			{
+		
+		else switch (choice){
 				case "1":
 					MenuHelper.AddReviewMenu(reviewSystem, currentAccount);
 					break;
@@ -149,6 +152,6 @@ while (true)
 					ConsoleHelper.PrintError("Invalid option. Please try again.");
 					break;
 			}
-		}
+		Console.Clear();
 	}
 }
